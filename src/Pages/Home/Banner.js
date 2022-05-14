@@ -1,10 +1,14 @@
 import React from 'react';
 import chair from '../../assets/images/chair.png';
+import ban from '../../assets/images/bg.png'
 
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen   w-full h-full">
+        <div style={{
+            background: `url(${ban})`,
+            backgroundSize: 'cover'
+        }} className="hero min-h-screen   w-full h-full">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={chair} className="max-w-xl rounded-lg shadow-2xl" />
                 <div>
